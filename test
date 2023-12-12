@@ -26,7 +26,6 @@
       font-size: 80px;
       text-align: center;
     }
-
     .small-rectangle {
       width: 110px;
       height: 50px;
@@ -44,7 +43,6 @@
       top: 220px;
       left: calc(15% - 60px);
     }
-
     .small-rectangle:nth-child(3) {
       top: 220px;
       left: calc(37% + 10px);
@@ -57,20 +55,17 @@
   </style>
 </head>
 <body>
-
 <div class="square">
   <div class="big-rectangle"><span id="timer">00:00:00</span></div>
   <div class="small-rectangle" onclick="startTimer()"><span>START</span></div>
   <div class="small-rectangle" onclick="stopTimer()"><span>STOP</span></div>
   <div class="small-rectangle" onclick="resetTimer()"><span>RESET</span></div>
 </div>
-
 <script>
   let timerRunning = false;
   let startTime;
   let elapsedTime = 0;
   let timerInterval;
-
   function startTimer() {
     if (!timerRunning) {
       timerRunning = true;
@@ -78,15 +73,13 @@
       timerInterval = setInterval(updateTimer, 1000);
     }
   }
-
-  function stopTimer() {
+  function stopTime() {
     if (timerRunning) {
       timerRunning = false;
       clearInterval(timerInterval);
       elapsedTime = Date.now() - startTime;
     }
   }
-
   function resetTimer() {
     stopTimer();
     elapsedTime = 0;
@@ -97,7 +90,6 @@
     const hours = Math.floor(currentTime / 3600000);
     const minutes = Math.floor((currentTime % 3600000) / 60000);
     const seconds = Math.floor((currentTime % 60000) / 1000);
-
     document.getElementById('timer').innerText = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
   }
 </script>
@@ -125,7 +117,6 @@ class Solution {
                     dp[n][1] = 1 + temp[1];
                 }
             }
-            
             int start = n >= 20 ? 20 : n;
             for(int i=start;i>=1;i--) {
                 for(int j=1;j<=3;j++) { // 싱글, 더블, 트리플 
@@ -139,8 +130,7 @@ class Solution {
                     }
                 }
             }
-        }
-        
+         }
         return dp[n];
     }
 }
