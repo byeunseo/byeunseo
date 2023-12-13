@@ -1,0 +1,70 @@
+{
+"id": 17,
+"title": "리스트 조회",
+"order": 0,
+"completed": false,
+"url": "http://localhost:8080/17"
+}
+"id": 1,
+"title": "아이템 조회",
+"order": 0,
+"completed": false,
+"url": "http://localhost:8080/1"
+},
+{
+"id": 2,
+"title": "아이템 조회",
+"order": 0,
+"completed": false,
+"url": "http://localhost:8080/2"
+}, ...
+{
+"id": 17,
+"title": "아이템 수정",
+"order": 0,
+"completed": false,
+"url": "http://localhost:8080/17"
+}
+"title": "아이템 삭제"
+}	{
+"id": 1,
+"title": "전체 리스트 삭제",
+"order": 0,
+"completed": false,
+"url": "http://localhost:8080/1"
+}
+{
+"id": 17,
+"title": "리스트 조회",
+"order": 0,
+"completed": false,
+"url": "http://localhost:8080/17"
+}
+"id": 1,
+"title": "아이템 조회",
+"order": 0,
+"completed": false,
+"url": "http://localhost:8080/1"
+},
+{
+"id": 2,
+"title": "아이템 조회",
+"order": 0,
+"completed": false,
+"url": "http://localhost:8080/2"
+}, ...
+{
+"id": 17,
+"title": "아이템 수정",
+"order": 0,
+"completed": false,
+"url": "http://localhost:8080/17"
+}
+"title": "아이템 삭제"
+}	{
+"id": 1,
+"title": "전체 리스트 삭제",
+"order": 0,
+"completed": false,
+"url": "http://localhost:8080/1"
+}
